@@ -1,0 +1,9 @@
+hdfs dfs -ls /
+hadoop fs -mkdir /input_data
+hdfs dfs -put /config/workspace/MOVIE_RATING_PROJECT/movies.dat /input_data
+hdfs dfs -put /config/workspace/MOVIE_RATING_PROJECT/ratings.dat /input_data
+hdfs dfs -put MOVIE_RATING_PROJECT/users.dat /input_data
+
+hdfs dfs -ls /input_data
+
+hdfs dfs -rm -r '/input_data/*'
